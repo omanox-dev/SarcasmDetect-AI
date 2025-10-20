@@ -20,10 +20,15 @@ logger = logging.getLogger("uvicorn.error")
 
 app = FastAPI(title="SarcasmDetect AI API")
 
-# Allow local development origins; change in production
+# Allow local development origins and production Netlify domain
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000", 
+        "https://sarcasmdetect-ai.netlify.app",
+        "https://*.netlify.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
