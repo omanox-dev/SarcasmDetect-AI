@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import API_BASE_URL from '../config.js'
 
 export default function ImagePage(){
   const [file, setFile] = useState(null)
@@ -34,7 +35,7 @@ export default function ImagePage(){
       fd.append('file', processed, file.name)
       fd.append('image_caption', caption || '')
     
-      const res = await axios.post('/api/analyze/image', fd, { 
+      const res = await axios.post(`${API_BASE_URL}/api/analyze/image`, fd, { 
         headers: {'Content-Type':'multipart/form-data'},
         timeout: 60000 // 60 second timeout for OCR processing
       })

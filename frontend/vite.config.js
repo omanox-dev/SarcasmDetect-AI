@@ -7,5 +7,16 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:8000'
     }
+  },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }
 })

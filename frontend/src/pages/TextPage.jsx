@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import API_BASE_URL from '../config.js'
 
 export default function TextPage(){
   const [text, setText] = useState('')
@@ -20,7 +21,7 @@ export default function TextPage(){
     setError(null)
     setResult(null)
     try{
-      const res = await axios.post('/api/analyze/text', {text})
+      const res = await axios.post(`${API_BASE_URL}/api/analyze/text`, {text})
       console.log('analyze success', res)
       setResult(res.data)
     }catch(e){

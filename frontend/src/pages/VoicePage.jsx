@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import API_BASE_URL from '../config.js'
 
 export default function VoicePage(){
   const [transcript, setTranscript] = useState('')
@@ -130,7 +131,7 @@ export default function VoicePage(){
     fd.append('acoustic_notes', '')
     
     try{
-      const res = await axios.post('/api/analyze/voice', fd, { 
+      const res = await axios.post(`${API_BASE_URL}/api/analyze/voice`, fd, { 
         headers: {'Content-Type':'multipart/form-data'},
         timeout: 60000 // Increased timeout for audio processing
       })
