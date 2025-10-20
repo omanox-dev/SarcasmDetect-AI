@@ -82,3 +82,8 @@ GEMINI_AUDIO_TRANSCRIPTION.md
 FREE_DEPLOYMENT.md
 DEPLOYMENT_GUIDE.md
 FUTURE_ENHANCEMENTS.md
+
+# Documentation folder - keep all docs local, don't push to GitHub
+docs/
+*.tex
+*.pdf
