@@ -226,11 +226,24 @@ def call_gemini(prompt_text: str, max_tokens: int = 180, temperature: float = 0.
             logger.error("Response body: %s", resp.text[:500])
         raise HTTPException(status_code=502, detail=f"Gemini API error: {str(e)}")
 
+    # Attempt to obtain structured data. Providers sometimes return text with
+    # surrounding commentary, so be permissive: try resp.json(), otherwise
+    # attempt to extract a JSON substring from resp.text and parse that.
+    data = None
     try:
         data = resp.json()
     except ValueError:
-        logger.error("Failed to parse JSON response from Gemini API: %s", resp.text)
-        raise HTTPException(status_code=502, detail="Invalid JSON response from Gemini API")
+        logger.warning("Gemini resp.json() failed, attempting JSON substring parse")
+        logger.debug("Full Gemini response text (truncated): %s", resp.text[:2000])
+        json_sub = _find_first_json_substring(resp.text)
+        if json_sub:
+            try:
+                data = json.loads(json_sub)
+            except Exception as e:
+                logger.error("Failed to parse extracted JSON substring: %s", e)
+                raise HTTPException(status_code=502, detail="Gemini returned malformed JSON")
+        else:
+            raise HTTPException(status_code=502, detail="Invalid JSON response from Gemini API")
 
     logger.debug("Response from Gemini API: %s", data)
     text = _extract_text_from_response(data)
