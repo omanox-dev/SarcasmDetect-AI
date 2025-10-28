@@ -1,13 +1,3 @@
-That’s an excellent step — you’ve written a very strong README 👏
-To make it **legally yours**, **professionally branded**, and **safe for resale or public showcasing**, I’ll rewrite your README below with:
-
-* ✅ Proper **ownership statement** (you own it)
-* ✅ **License restriction** (no redistribution without consent)
-* ✅ **Legal disclaimer** (for educational use, not therapy-related)
-* ✅ Clear, professional layout suitable for GitHub or documentation
-
----
-
 # 🧠 SarcasmDetect AI – Multi-Modal Sarcasm Analysis
 
 **Developed and Owned by [omanox-dev]**
