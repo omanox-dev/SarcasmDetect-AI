@@ -1,54 +1,85 @@
-# SarcasmDetect AI - Multi-Modal Sarcasm Analysis
+That’s an excellent step — you’ve written a very strong README 👏
+To make it **legally yours**, **professionally branded**, and **safe for resale or public showcasing**, I’ll rewrite your README below with:
 
-**SarcasmDetect AI** | Text, Image & Voice Analysis
+* ✅ Proper **ownership statement** (you own it)
+* ✅ **License restriction** (no redistribution without consent)
+* ✅ **Legal disclaimer** (for educational use, not therapy-related)
+* ✅ Clear, professional layout suitable for GitHub or documentation
 
-Web application for detecting sarcasm using Google Gemini AI and OCR technology.
+---
 
-## 🎯 Features
+# 🧠 SarcasmDetect AI – Multi-Modal Sarcasm Analysis
 
-- **Text Analysis**: Analyze text for sarcasm with intensity scoring
-- **Image Analysis**: Extract text from images and analyze for sarcasm
-- **Voice Analysis**: Record or upload audio → Transcribe → Analyze
+**Developed and Owned by [omanox-dev]**
+
+---
+
+## 📘 Overview
+
+**SarcasmDetect AI** is an advanced web application that detects sarcasm across **text**, **images**, and **voice** inputs using **Google Gemini AI** and **OCR.space** APIs.
+It demonstrates **multi-modal AI analysis** through a modern **React + FastAPI** architecture.
+
+This project is an original creation by **omanox-dev** and is provided strictly for **educational, research, and demonstration purposes.**
+
+---
+
+## 🎯 Core Features
+
+* 📝 **Text Analysis** – Detect sarcasm with probability & confidence scoring
+* 🖼️ **Image Analysis** – Extract text (OCR) and analyze for sarcasm
+* 🎤 **Voice Analysis** – Record or upload audio → Transcribe → Analyze tone and sarcasm
+* ⚡ Real-time results through FastAPI backend
+* 🧩 Modular AI integration (Gemini + OCR APIs)
+
+---
 
 ## 🚀 Quick Setup
 
 ### Prerequisites
 
-- Python 3.8+
-- Node.js 18+
-- API Keys: Gemini API, OCR.space
+* Python 3.8+
+* Node.js 18+
+* API Keys: **Gemini API** and **OCR.space**
 
 ### Installation
 
-**Backend:**
+#### Backend
+
 ```bash
 cd backend
 pip install -r requirements.txt
 
-# Create .env file with your API keys:
+# Create .env file:
 # GEMINI_API_KEY=your_key
 # OCR_API_KEY=your_key
 
 python -m uvicorn main:app --reload
 ```
 
-**Frontend:**
+#### Frontend
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`
+Then open:
+👉 **[http://localhost:5173](http://localhost:5173)**
+
+---
 
 ## 🧪 Testing
 
-Test all features:
-- **Text**: Paste text → Analyze
-- **Image**: Upload image → Auto-extract → Analyze  
-- **Voice**: Record or upload audio → Transcribe → Analyze
+1. **Text:** Enter text → Click “Analyze”
+2. **Image:** Upload image → OCR → Analyze
+3. **Voice:** Record or upload audio → Transcribe → Analyze
 
-## 📊 Project Structure
+All modalities use **Gemini AI** for sarcasm detection and tone evaluation.
+
+---
+
+## 📁 Project Structure
 
 ```
 ├── backend/         # FastAPI server
@@ -58,110 +89,77 @@ Test all features:
 └── README.md
 ```
 
+---
+
 ## 🛠️ Tech Stack
 
-**Backend:** Python, FastAPI, Google Gemini AI, OCR.space  
-**Frontend:** React 18, Vite 5, React Router, Axios
-
-## 📝 API Endpoints
-
-- `POST /api/analyze/text` - Text sarcasm analysis
-- `POST /api/analyze/image` - Image OCR + analysis
-- `POST /api/analyze/voice` - Voice transcription + analysis
-
-Response includes: sarcasm label, intensity, emotions, risk score, explanation.
-
-## 🐛 Common Issues
-
 **Backend:**
-- Missing dependencies? Run `pip install -r requirements.txt`
-- API key errors? Check `.env` file in backend folder
-- Port 8000 busy? Use `--port 8001` flag
+
+* Python 3.9+, FastAPI, Uvicorn, Pydantic
+* Google Gemini AI (text & audio processing)
+* OCR.space API (image text extraction)
 
 **Frontend:**
-- CORS errors? Ensure backend runs on port 8000
-- Build errors? Delete `node_modules` and reinstall
-- Voice issues? Use Chrome/Edge for best compatibility
 
-
-## 📄 License
-
-MIT License - Free for educational and commercial use.
-
----
-
-**Built with React + FastAPI + AI**
-
-For detailed setup and troubleshooting, see documentation files above.
-````
-3. **Manual Transcript**: Paste text directly
-
-All options → Gemini AI transcription → Sarcasm analysis
-
-## 🚧 Future Enhancements (Optional)
-
-Ideas for extending the project:
-- [ ] User authentication & login
-- [ ] Save analysis history to database
-- [ ] Export results to PDF/CSV
-- [ ] Batch analysis (multiple files at once)
-- [ ] Real-time analysis via WebSocket
-- [ ] Multi-language support
-- [ ] Sentiment trends over time
-- [ ] Browser extension
-- [ ] Mobile app (React Native)
-
-## � License
-
-MIT License - Free to use for educational and commercial purposes.
-
-## 👨‍💻 Tech Stack
-
-**Backend:**
-- Python 3.8+
-- FastAPI (web framework)
-- Uvicorn (ASGI server)
-- Google Generative AI (Gemini)
-- Pydantic (data validation)
-
-**Frontend:**
-- React 18.2
-- Vite 5.0 (build tool)
-- React Router 6.20 (navigation)
-- Axios 1.6 (HTTP client)
-
-**APIs:**
-- Google Gemini AI (text, image, audio analysis)
-- OCR.space (image text extraction)
-- Web Speech API (browser recording)
+* React 18 + Vite 5
+* React Router, Axios, Web Speech API
 
 **Deployment:**
-- Railway (backend hosting)
-- Vercel (frontend hosting)
-- GitHub (version control)
+
+* Railway (backend hosting)
+* Vercel (frontend hosting)
+* GitHub (version control)
 
 ---
 
-## 🎓 For Students & Teachers
+## 🔗 API Endpoints
 
-This project is perfect for:
-- **Final year projects** (BE/BTech/MCA)
-- **AI/ML course assignments**
-- **Web development portfolios**
-- **Hackathon submissions**
-- **Research papers** on sarcasm detection
+| Endpoint                  | Description                            |
+| ------------------------- | -------------------------------------- |
+| `POST /api/analyze/text`  | Text sarcasm analysis                  |
+| `POST /api/analyze/image` | OCR + image sarcasm analysis           |
+| `POST /api/analyze/voice` | Voice transcription + sarcasm analysis |
 
-**Key Features for Academic Projects:**
-- ✅ Modern tech stack (React + FastAPI)
-- ✅ AI/ML integration (Gemini multimodal)
-- ✅ Real-world application
-- ✅ Complete documentation
-- ✅ Zero ongoing costs
-- ✅ Production-ready deployment
-- ✅ Multiple input modalities (text, image, voice)
+Each response includes:
+
+> `sarcasm_label`, `intensity`, `emotions`, `risk_score`, `explanation`.
 
 ---
 
-**Questions?** Check the documentation files or open an issue!
+## 🎓 Ideal Use Cases
 
-**Need help?** All features are tested and working. Just follow the Quick Setup above! 💪
+Perfect for:
+
+* Final-year or MCA/BTech AI projects
+* NLP or emotion analysis research
+* Web development portfolios
+* Hackathons or AI showcases
+
+---
+
+## ⚖️ License & Ownership
+
+### Copyright © 2025 [omanox-dev]
+
+This project and its source code are the **exclusive intellectual property** of the developer **omanox-dev**.
+It is **licensed only for educational and non-commercial use**.
+
+> ❌ Redistribution, resale, or public upload (including GitHub forks, reposts, or re-branding) is strictly prohibited without written consent.
+> ⚠️ This system is **not a clinical or diagnostic tool** and should not be used for mental-health advice or therapy.
+> ✅ Educational, research, and demonstration use is permitted under direct attribution to the author.
+
+**Attribution Format:**
+
+> *Developed by omanox-dev — SarcasmDetect AI (2025)*
+
+---
+
+## 💬 Contact
+
+For collaboration, licensing, or research inquiries:
+📧 **[omdombe8@gmail.com](mailto:omdombe8@gmail.com)**
+
+---
+
+**© 2025 omanox-dev – All Rights Reserved**
+*“Bringing context understanding to AI communication.”*
