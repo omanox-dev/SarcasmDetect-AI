@@ -1,10 +1,3 @@
-Perfect 🔥 — here’s your **final legally-correct and professional version** of both:
-
-✅ `README.md` → includes everything (features, setup, credits, ethical AI disclosure, and license summary)
-✅ `LICENSE.txt` → your own Academic Demonstration License that protects your ownership while staying compliant with API and AI tool use
-
----
-
 # 🧠 **Final `README.md`**
 
 ````markdown
