@@ -1,23 +1,31 @@
+
+---
+
+# 📄 **Final `LICENSE.txt`**
+
+```text
 SarcasmDetect AI - Multi-Modal Sarcasm Detection
 Copyright © 2025 omanox-dev. All Rights Reserved.
 
-This software and its source code are the intellectual property of omanox-dev.
+This software and its source code are the intellectual property of omanox-dev,
+excluding any third-party libraries, APIs, or AI services (such as Google Gemini, OCR.space,
+Visual Studio Code, or GitHub Copilot) which remain the property of their respective owners.
 
-Permission is granted to students, educators, and researchers to use this project 
-for academic demonstration, learning, or portfolio purposes, provided that 
-proper credit is given to the author.
+Permission is granted to students, educators, and researchers to use this project
+for academic demonstration, learning, or portfolio purposes, provided that proper credit
+is given to the author.
 
-Redistribution, resale, modification for resale, or public upload of this 
-software or its source code (including GitHub, GitLab, or other repositories) 
-without written permission from the author is strictly prohibited.
+Redistribution, resale, modification for resale, or public upload of this software
+(including forks, copies, or re-branding) without written permission from the author
+is strictly prohibited.
 
-This software is provided “as is” without warranty of any kind, express or implied, 
-including but not limited to the warranties of merchantability, fitness for a 
+This software is provided “as is” without warranty of any kind, express or implied,
+including but not limited to the warranties of merchantability, fitness for a
 particular purpose, and noninfringement.
 
 Disclaimer:
-This application is not intended for medical or mental-health diagnosis or treatment.
-It is an educational prototype demonstrating multi-modal AI integration.
+This application is not intended for clinical, therapeutic, or medical use.
+It is provided solely for educational and demonstration purposes.
 
-Attribution Required:
+Attribution:
 Developed by omanox-dev — SarcasmDetect AI (2025)
