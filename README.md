@@ -1,6 +1,5 @@
 # 🧠 **Final `README.md`**
 
-````markdown
 > 📄 Licensed under the **Academic Demonstration License**  
 > © 2025 **omanox-dev**. All rights reserved.
 
@@ -50,7 +49,6 @@ pip install -r requirements.txt
 # OCR_API_KEY=your_key
 
 python -m uvicorn main:app --reload
-````
 
 #### Frontend
 
