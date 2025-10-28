@@ -1,4 +1,3 @@
-# 🧠 **Final `README.md`**
 
 > 📄 Licensed under the **Academic Demonstration License**  
 > © 2025 **omanox-dev**. All rights reserved.
